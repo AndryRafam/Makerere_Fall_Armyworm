@@ -13,5 +13,6 @@ This project has been inspired by the following challenge: https://zindi.africa/
     - Accurayc: 98.76 %
     - Loss: 3.12 %
 
+### (More models will be added)
 
 
