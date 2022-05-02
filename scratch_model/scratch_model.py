@@ -50,19 +50,15 @@ from tensorflow.keras import Model, Input
 from tensorflow.keras.layers import Rescaling, Conv2D, MaxPool2D, Flatten, Dense, Dropout
 
 def model(y):
-    x = Rescaling(1./255)(y)
-    x = Conv2D(64,3,padding="same",activation="relu",strides=(2,2))(x)
-    x = Conv2D(64,3,padding="same",activation="relu",strides=(2,2))(x)
-    x = MaxPool2D(pool_size=(2,2),strides=(2,2))(x)
+	x = Rescaling(1./255)(y)
+	x = Conv2D(64,3,padding="same",activation="relu",strides=(2,2))(x)
+	x = MaxPooling2D()(x)
     
     x = Conv2D(128,3,padding="same",activation="relu",strides=(2,2))(x)
     x = Conv2D(128,3,padding="same",activation="relu",strides=(2,2))(x)
-    x = MaxPool2D(pool_size=(2,2),strides=(2,2))(x)
-
     x = Conv2D(256,3,padding="same",activation="relu",strides=(2,2))(x)
-    x = Conv2D(256,3,padding="same",activation="relu",strides=(2,2))(x)
-    x = Conv2D(256,3,padding="same",activation="relu",strides=(2,2))(x)
-
+    x = MaxPooling2D()(x)
+    
     x = Flatten()(x)
     x = Dense(512,activation="relu")(x)
     x = Dropout(0.2,seed=42)(x)
