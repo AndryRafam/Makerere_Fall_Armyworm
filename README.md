@@ -5,7 +5,7 @@ This project has been inspired by the following challenge: https://zindi.africa/
   - 2) To see, how each pretrained models perform against each other on the dataset.
   
 
-### Scratch model over 20 epochs:
+### Scratch model over 25 epochs:
     - Accuracy: 93.19 %
     - Loss: 20.19%
 
