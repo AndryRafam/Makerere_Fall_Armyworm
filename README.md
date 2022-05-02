@@ -1,4 +1,4 @@
-# Makerere_Fall_Armyworm
+# Makerere Fall Armyworm
 This project has been inspired by the following challenge: https://zindi.africa/competitions/makerere-fall-armyworm-crop-challenge. This experiment has two purpose:
 
   - 1) To see, how well a CNN model built from scracth performs against a pretrained models (after being fine tuned) such as VGG16 / VGG19, ResNet50 ...
